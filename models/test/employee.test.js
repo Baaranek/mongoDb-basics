@@ -53,8 +53,5 @@ describe('Employee', () => {
     dep.validate(err => {
       expect(err.errors).to.exist;
     });
-    after(() => {
-      mongoose.models = {};
-    });
   });
 });
